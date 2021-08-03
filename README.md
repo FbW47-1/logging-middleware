@@ -10,3 +10,11 @@ Beispiel für log.txt
  2021-08-03T15:03:01.315Z: /contact 
  2021-08-03T15:03:12.126Z: /contact 
 ```
+
+Hilfe:
+https://blog.webdevsimplified.com/2019-12/express-middleware-in-depth/
+https://egghead.io/lessons/node-js-write-or-append-to-a-file-in-node-js-with-fs-writefile-and-fs-writefilesync
+
+
+https://stackoverflow.com/questions/3459476/how-to-append-to-a-file-in-node
+
