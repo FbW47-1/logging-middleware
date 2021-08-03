@@ -12,6 +12,8 @@ Beispiel für log.txt
 ```
 
 Hilfe:
+
+
 https://blog.webdevsimplified.com/2019-12/express-middleware-in-depth/
 https://egghead.io/lessons/node-js-write-or-append-to-a-file-in-node-js-with-fs-writefile-and-fs-writefilesync
 
