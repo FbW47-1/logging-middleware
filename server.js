@@ -1,10 +1,24 @@
 import express from 'express';
+import {promisify} from "util";
+import fs from "fs";
+const writeFile= promisify(fs.writeFile);
+/* const appendFile=promisify(fs.appendFile); */
 // Hier musst du wahrscheinlich noch sachen importieren damit du Dateien schreiben kannst. 
 
 const app = express();
 
+
 const loggingMiddleware = async (req, res, next) => {
     // Hier fehlt Code
+    //datum=> new Date
+    //path=> req
+    //
+    const entry=(`\n${new Date().toISOString()}:${req.originalUrl}`);
+    //zu einem log.txt schicken=>fs
+
+    await writeFile("log.txt",entry, {flag:"a"})
+    /* await writeFile("log.txt",entry); */
+    next()
 }
 
 app.use(loggingMiddleware)
